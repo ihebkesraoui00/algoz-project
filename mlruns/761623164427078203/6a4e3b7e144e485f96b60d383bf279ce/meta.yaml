@@ -1,0 +1,15 @@
+artifact_uri: file:///home/iheb/Documents/project/project_algoz_pfe/mlruns/761623164427078203/6a4e3b7e144e485f96b60d383bf279ce/artifacts
+end_time: 1720531765248
+entry_point_name: ''
+experiment_id: '761623164427078203'
+lifecycle_stage: active
+run_id: 6a4e3b7e144e485f96b60d383bf279ce
+run_name: worried-worm-442
+run_uuid: 6a4e3b7e144e485f96b60d383bf279ce
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1720531765211
+status: 3
+tags: []
+user_id: iheb

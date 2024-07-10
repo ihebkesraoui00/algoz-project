@@ -1,0 +1,13 @@
+[07/08/2024 03:57:16 PM] [DEBUG] [/home/iheb/Documents/project/project_algoz_pfe/nanoz/nzio.py:254] /home/iheb/Documents/project/project_algoz_pfe/config/config.yaml copied into dev/20240708155716/io.json.
+[07/08/2024 03:57:16 PM] [DEBUG] [/home/iheb/Documents/project/project_algoz_pfe/nanoz/nzio.py:270] Device assigned: cpu
+[07/08/2024 03:57:16 PM] [INFO] [/home/iheb/Documents/project/project_algoz_pfe/algoz.py:49] Algoz version 2.21.1
+[07/08/2024 03:57:16 PM] [INFO] [/home/iheb/Documents/project/project_algoz_pfe/algoz.py:50] Execution started at 2024-07-08 15:57:16
+[07/08/2024 03:57:16 PM] [INFO] [/home/iheb/Documents/project/project_algoz_pfe/algoz.py:51] Results directory created at: dev/20240708155716
+[07/08/2024 03:57:16 PM] [INFO] [/home/iheb/Documents/project/project_algoz_pfe/nanoz/nzio.py:366] Mode: train
+[07/08/2024 03:57:16 PM] [INFO] [/home/iheb/Documents/project/project_algoz_pfe/nanoz/nzio.py:367] Training dataset: [{'data': ['EtOH_DB_V3_2_9499.csv']}]
+[07/08/2024 03:57:16 PM] [INFO] [/home/iheb/Documents/project/project_algoz_pfe/nanoz/nzio.py:368] Validation dataset: [{'data': 'EtOH_DB_V3_2_random.csv'}]
+[07/08/2024 03:57:16 PM] [INFO] [/home/iheb/Documents/project/project_algoz_pfe/nanoz/nzio.py:369] Algorithm: NNR
+[07/08/2024 03:57:16 PM] [INFO] [/home/iheb/Documents/project/project_algoz_pfe/nanoz/nzio.py:371] Module: CNN1D
+[07/08/2024 03:57:16 PM] [INFO] [/home/iheb/Documents/project/project_algoz_pfe/nanoz/nzio.py:377] Device: cpu
+[07/08/2024 03:57:16 PM] [INFO] [/home/iheb/Documents/project/project_algoz_pfe/nanoz/utils.py:60] Execution time of initialization: 0:00:00.002998
+

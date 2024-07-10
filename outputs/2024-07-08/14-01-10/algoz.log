@@ -1,0 +1,63 @@
+[2024-07-08 14:01:10,881][root][DEBUG] - /home/iheb/Documents/project/project_algoz_pfe/config/config.yaml copied into dev/20240708140110/io.json.
+[2024-07-08 14:01:10,881][root][DEBUG] - Device assigned: cpu
+[2024-07-08 14:01:10,882][root][INFO] - Algoz version 2.21.1
+[2024-07-08 14:01:10,882][root][INFO] - Execution started at 2024-07-08 14:01:10
+[2024-07-08 14:01:10,882][root][INFO] - Results directory created at: dev/20240708140110
+[2024-07-08 14:01:10,882][root][INFO] - Mode: train
+[2024-07-08 14:01:10,883][root][INFO] - Training dataset: [{'data': ['EtOH_DB_V3_2_9499.csv']}]
+[2024-07-08 14:01:10,883][root][INFO] - Validation dataset: [{'data': 'EtOH_DB_V3_2_random.csv'}]
+[2024-07-08 14:01:10,883][root][INFO] - Algorithm: NNR
+[2024-07-08 14:01:10,883][root][INFO] - Module: CNN1D
+[2024-07-08 14:01:10,883][root][INFO] - Device: cpu
+[2024-07-08 14:01:10,883][root][INFO] - Execution time of initialization: 0:00:00.010995
+
+[2024-07-08 14:01:10,884][root][DEBUG] - Creating UnfoldRegressionDataset with {'config_data': {'data_paths_test': [{'data': 'EtOH_DB_V3_2_random.csv'}], 'chips_test': ['UUT1'], 'gases_test': ['FinalConcEtOH'], 'minibatch_size_test': 16, 'minibatch_step_test': 1, 'pre_processing_test': [{'name': 'SkipData', 'percentage': 0}, {'name': 'LimitOfDetection', 'gases': ['FinalConcEtOH'], 'lod': [0.5]}], 'transform_train': {'x': [{'name': 'Transpose'}]}, 'module': None, 'criterion': 'MSELoss', 'optimizer': 'Adam', 'lr': 1e-06, 'max_epochs': 2, 'batch_size': 32, 'iterator_train': 'DataLoader', 'iterator_valid': 'DataLoader', 'dataset': 'Dataset', 'train_split': {'predefined_split': {'dataset': 'test'}}, 'iterator_train__shuffle': True, 'iterator_valid__shuffle': False, 'callbacks': {'Checkpoint': {'monitor': 'valid_loss_best', 'f_params': 'model_{last_epoch[epoch]}.pt', 'f_optimizer': 'optimizer.pt', 'f_criterion': 'criterion.pt', 'f_history': 'history.json', 'f_pickle': None, 'fn_prefix': '', 'dirname': 'checkpoint', 'load_best': True, 'event_name': 'event_cp'}, 'LogBestEpoch': {}, 'ComparisonTensorBoard': {'logdir': 'tensorboard_logs', 'comparison_list': ['loss']}}, 'predict_nonlinearity': 'auto', 'warm_start': False, 'verbose': 1, 'device': 'cpu', 'data_paths_train': [{'data': ['EtOH_DB_V3_2_9499.csv']}], 'chips_train': ['UUT1', 'UUT2'], 'gases_train': ['FinalConcEtOH'], 'minibatch_size_train': 16, 'minibatch_step_train': 1, 'pre_processing_train': [{'name': 'SkipData', 'percentage': 0}, {'name': 'LimitOfDetection', 'gases': ['FinalConcEtOH'], 'lod': [0.5]}], 'input_dim': [4, 16], 'conv_map': [8, 64], 'conv_kernel': 3, 'pool_kernel': 2, 'mlp_hidden_dims': [100, 50], 'output_dim': 1, 'use_softmax': False, 'conv_norm': 'batch', 'pp_conv_norm': 'instance', 'mlp_norm': 'batch'}, 'device': 'cpu'}
+[2024-07-08 14:01:10,884][root][DEBUG] - pre_processing not found in config file.
+[2024-07-08 14:01:10,884][root][DEBUG] - transform not found in config file.
+[2024-07-08 14:01:10,888][root][DEBUG] - 
+[2024-07-08 14:01:10,888][root][DEBUG] - Loading data from {'data': ['EtOH_DB_V3_2_9499.csv']}.
+[2024-07-08 14:01:10,922][root][DEBUG] - Shape of the dataframe (9499, 19).
+[2024-07-08 14:01:10,989][root][DEBUG] - 
+       Unnamed: 0.1    Unnamed: 0  Temperature  Humidity Sensor     UUT1_I_S1  \
+count  9.499000e+03  9.499000e+03  9499.000000      9499.000000  9.499000e+03   
+mean   1.444749e+06  1.444749e+06    25.000523        40.024574  1.011276e-07   
+std    2.742269e+03  2.742269e+03     0.012039         0.023221  1.149486e-07   
+min    1.440000e+06  1.440000e+06    24.970000        39.965164  2.973958e-09   
+25%    1.442374e+06  1.442374e+06    24.990000        40.007141  1.229036e-08   
+50%    1.444749e+06  1.444749e+06    25.000000        40.028130  4.858594e-08   
+75%    1.447124e+06  1.447124e+06    25.010000        40.040718  1.516875e-07   
+max    1.449498e+06  1.449498e+06    25.030000        40.082695  4.409635e-07   
+
+          UUT1_I_S2     UUT1_I_S3     UUT1_I_S4     UUT2_I_S1     UUT2_I_S2  \
+count  9.499000e+03  9.499000e+03  9.499000e+03  9.499000e+03  9.499000e+03   
+mean   1.830274e-07  9.327376e-08  3.426323e-08  7.479025e-08  1.511867e-07   
+std    2.250477e-07  1.162084e-07  4.503214e-08  9.202183e-08  1.972818e-07   
+min   -3.125000e-10  2.005208e-09 -2.763021e-09 -3.768229e-09 -7.828125e-09   
+25%    1.378255e-08  8.449219e-09  6.757812e-10  3.695313e-09  3.966146e-09   
+50%    7.614844e-08  3.627083e-08  1.303906e-08  3.247396e-08  5.677865e-08   
+75%    2.707188e-07  1.360599e-07  5.189323e-08  1.159857e-07  2.269622e-07   
+max    8.662865e-07  4.557578e-07  1.725599e-07  3.469219e-07  7.537526e-07   
+
+          UUT2_I_S3     UUT2_I_S4     UUT3_I_S1     UUT3_I_S2     UUT3_I_S3  \
+count  9.499000e+03  9.499000e+03  9.499000e+03  9.499000e+03  9.499000e+03   
+mean   8.392457e-08  3.382406e-08  1.035819e-07  1.878249e-07  8.816123e-08   
+std    9.975253e-08  4.480383e-08  1.202894e-07  2.395175e-07  1.191887e-07   
+min    6.559896e-09 -3.656250e-09  1.039063e-09 -6.234375e-09 -4.986979e-09   
+25%    1.174219e-08  2.682292e-10  1.081250e-08  8.494792e-09  1.393229e-09   
+50%    3.438281e-08  1.276302e-08  4.856250e-08  7.385156e-08  2.929427e-08   
+75%    1.204870e-07  5.234115e-08  1.562096e-07  2.836849e-07  1.329310e-07   
+max    3.977057e-07  1.701615e-07  4.602422e-07  9.234349e-07  4.622969e-07   
+
+          UUT3_I_S4  FinalConcAcetone  FinalConcCO  FinalConcEtOH  
+count  9.499000e+03       9499.000000  9499.000000    9499.000000  
+mean   2.788424e-08          7.560121     9.357608      22.884470  
+std    4.374407e-08          0.907630     0.842661       1.809354  
+min   -7.531250e-09          5.986627     8.221413      19.959396  
+25%   -4.479167e-09          7.492557     8.255794      22.968914  
+50%    7.020833e-09          7.501021     9.989201      23.001516  
+75%    4.452214e-08          7.511189    10.004285      23.028864  
+max    1.631693e-07          9.023724    10.036797      26.054622  
+[2024-07-08 14:01:10,993][root][DEBUG] - Shape of the dataframe after pre-processing: (9499, 19).
+[2024-07-08 14:01:10,994][root][DEBUG] - Shape of the full dataframe: (9499, 19).
+[2024-07-08 14:01:11,007][matplotlib.pyplot][DEBUG] - Loaded backend tkagg version 8.6.
+[2024-07-08 14:01:13,355][root][DEBUG] - Size of the available index: torch.Size([18966]).

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/iheb/Documents/project/project_algoz_pfe/mlruns/761623164427078203/3046f55daf6d4a96bf9e7d352ef918e4/artifacts
+end_time: 1720531874397
+entry_point_name: ''
+experiment_id: '761623164427078203'
+lifecycle_stage: active
+run_id: 3046f55daf6d4a96bf9e7d352ef918e4
+run_name: exultant-trout-758
+run_uuid: 3046f55daf6d4a96bf9e7d352ef918e4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1720531874383
+status: 3
+tags: []
+user_id: iheb

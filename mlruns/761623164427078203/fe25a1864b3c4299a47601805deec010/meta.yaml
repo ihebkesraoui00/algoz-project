@@ -1,0 +1,15 @@
+artifact_uri: file:///home/iheb/Documents/project/project_algoz_pfe/mlruns/761623164427078203/fe25a1864b3c4299a47601805deec010/artifacts
+end_time: 1720532279742
+entry_point_name: ''
+experiment_id: '761623164427078203'
+lifecycle_stage: active
+run_id: fe25a1864b3c4299a47601805deec010
+run_name: loud-cod-505
+run_uuid: fe25a1864b3c4299a47601805deec010
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1720532267810
+status: 3
+tags: []
+user_id: iheb

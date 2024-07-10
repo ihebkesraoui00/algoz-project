@@ -1,0 +1,15 @@
+artifact_uri: file:///home/iheb/Documents/project/project_algoz_pfe/mlruns/761623164427078203/582ee65351c845be9f0bbb0295712a95/artifacts
+end_time: 1720529008801
+entry_point_name: ''
+experiment_id: '761623164427078203'
+lifecycle_stage: active
+run_id: 582ee65351c845be9f0bbb0295712a95
+run_name: caring-seal-581
+run_uuid: 582ee65351c845be9f0bbb0295712a95
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1720528990804
+status: 3
+tags: []
+user_id: iheb

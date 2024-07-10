@@ -1,0 +1,15 @@
+artifact_uri: file:///home/iheb/Documents/project/project_algoz_pfe/mlruns/761623164427078203/13b839bf3a354321bb62d7cff49bf5b4/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '761623164427078203'
+lifecycle_stage: active
+run_id: 13b839bf3a354321bb62d7cff49bf5b4
+run_name: intelligent-auk-932
+run_uuid: 13b839bf3a354321bb62d7cff49bf5b4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1720533704420
+status: 1
+tags: []
+user_id: iheb

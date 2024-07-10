@@ -1,0 +1,6 @@
+[2024-07-05 14:02:56,308][root][DEBUG] - /home/iheb/Documents/project/project_algoz_pfe/config/config.yaml copied into dev/20240705140253/io.json.
+[2024-07-05 14:02:56,312][root][DEBUG] - Device assigned: cpu
+[2024-07-05 14:02:56,313][root][INFO] - Algoz version 2.21.1
+[2024-07-05 14:02:56,314][root][INFO] - Execution started at 2024-07-05 14:02:53
+[2024-07-05 14:02:56,315][root][INFO] - Results directory created at: dev/20240705140253
+[2024-07-05 14:02:56,319][root][INFO] - Mode: train

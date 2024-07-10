@@ -1,0 +1,15 @@
+artifact_uri: file:///home/iheb/Documents/project/project_algoz_pfe/mlruns/994915083293093782/e60b9510785e4119bcedb873f03ff5f9/artifacts
+end_time: 1720518254158
+entry_point_name: ''
+experiment_id: '994915083293093782'
+lifecycle_stage: active
+run_id: e60b9510785e4119bcedb873f03ff5f9
+run_name: crawling-wasp-1
+run_uuid: e60b9510785e4119bcedb873f03ff5f9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1720518246680
+status: 4
+tags: []
+user_id: iheb

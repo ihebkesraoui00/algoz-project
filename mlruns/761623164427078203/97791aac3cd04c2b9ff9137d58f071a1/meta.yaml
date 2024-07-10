@@ -1,0 +1,15 @@
+artifact_uri: file:///home/iheb/Documents/project/project_algoz_pfe/mlruns/761623164427078203/97791aac3cd04c2b9ff9137d58f071a1/artifacts
+end_time: 1720531871159
+entry_point_name: ''
+experiment_id: '761623164427078203'
+lifecycle_stage: active
+run_id: 97791aac3cd04c2b9ff9137d58f071a1
+run_name: auspicious-frog-880
+run_uuid: 97791aac3cd04c2b9ff9137d58f071a1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1720531871142
+status: 3
+tags: []
+user_id: iheb

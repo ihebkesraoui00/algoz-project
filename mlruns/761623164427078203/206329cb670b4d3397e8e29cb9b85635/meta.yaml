@@ -1,0 +1,15 @@
+artifact_uri: file:///home/iheb/Documents/project/project_algoz_pfe/mlruns/761623164427078203/206329cb670b4d3397e8e29cb9b85635/artifacts
+end_time: 1720531727662
+entry_point_name: ''
+experiment_id: '761623164427078203'
+lifecycle_stage: active
+run_id: 206329cb670b4d3397e8e29cb9b85635
+run_name: clumsy-fish-181
+run_uuid: 206329cb670b4d3397e8e29cb9b85635
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1720531706149
+status: 3
+tags: []
+user_id: iheb

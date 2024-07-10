@@ -1,0 +1,15 @@
+artifact_uri: file:///home/iheb/Documents/project/project_algoz_pfe/mlruns/994915083293093782/feec266401d2416aa3d374c9dd1b2af5/artifacts
+end_time: 1720518410573
+entry_point_name: ''
+experiment_id: '994915083293093782'
+lifecycle_stage: active
+run_id: feec266401d2416aa3d374c9dd1b2af5
+run_name: valuable-turtle-851
+run_uuid: feec266401d2416aa3d374c9dd1b2af5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1720518403473
+status: 4
+tags: []
+user_id: iheb

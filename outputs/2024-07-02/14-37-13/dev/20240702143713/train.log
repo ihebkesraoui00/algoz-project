@@ -1,0 +1,6 @@
+[07/02/2024 02:37:13 PM] [DEBUG] [/home/iheb/Documents/project/project_algoz_pfe/nanoz/nzio.py:259] /home/iheb/Documents/project/project_algoz_pfe/config/config.yaml copied into dev/20240702143713/io.json.
+[07/02/2024 02:37:13 PM] [DEBUG] [/home/iheb/Documents/project/project_algoz_pfe/nanoz/nzio.py:275] Device assigned: cpu
+[07/02/2024 02:37:13 PM] [INFO] [/home/iheb/Documents/project/project_algoz_pfe/algoz.py:47] Algoz version 2.21.1
+[07/02/2024 02:37:13 PM] [INFO] [/home/iheb/Documents/project/project_algoz_pfe/algoz.py:48] Execution started at 2024-07-02 14:37:13
+[07/02/2024 02:37:13 PM] [INFO] [/home/iheb/Documents/project/project_algoz_pfe/algoz.py:49] Results directory created at: dev/20240702143713
+[07/02/2024 02:37:13 PM] [INFO] [/home/iheb/Documents/project/project_algoz_pfe/nanoz/nzio.py:325] Mode: train

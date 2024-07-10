@@ -1,0 +1,15 @@
+artifact_uri: file:///home/iheb/Documents/project/project_algoz_pfe/mlruns/994915083293093782/18752fbe87a646f9a1295bec195d2057/artifacts
+end_time: 1720518935011
+entry_point_name: ''
+experiment_id: '994915083293093782'
+lifecycle_stage: active
+run_id: 18752fbe87a646f9a1295bec195d2057
+run_name: vaunted-ant-665
+run_uuid: 18752fbe87a646f9a1295bec195d2057
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1720518927833
+status: 4
+tags: []
+user_id: iheb

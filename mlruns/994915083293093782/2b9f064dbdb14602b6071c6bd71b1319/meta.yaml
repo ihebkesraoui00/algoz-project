@@ -1,0 +1,15 @@
+artifact_uri: file:///home/iheb/Documents/project/project_algoz_pfe/mlruns/994915083293093782/2b9f064dbdb14602b6071c6bd71b1319/artifacts
+end_time: 1720518376268
+entry_point_name: ''
+experiment_id: '994915083293093782'
+lifecycle_stage: active
+run_id: 2b9f064dbdb14602b6071c6bd71b1319
+run_name: placid-slug-494
+run_uuid: 2b9f064dbdb14602b6071c6bd71b1319
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1720518369020
+status: 4
+tags: []
+user_id: iheb

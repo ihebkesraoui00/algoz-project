@@ -1,0 +1,13 @@
+[2024-07-08 15:56:22,131][root][DEBUG] - /home/iheb/Documents/project/project_algoz_pfe/config/config.yaml copied into dev/20240708155622/io.json.
+[2024-07-08 15:56:22,132][root][DEBUG] - Device assigned: cpu
+[2024-07-08 15:56:22,132][root][INFO] - Algoz version 2.21.1
+[2024-07-08 15:56:22,132][root][INFO] - Execution started at 2024-07-08 15:56:22
+[2024-07-08 15:56:22,132][root][INFO] - Results directory created at: dev/20240708155622
+[2024-07-08 15:56:22,132][root][INFO] - Mode: train
+[2024-07-08 15:56:22,132][root][INFO] - Training dataset: [{'data': ['EtOH_DB_V3_2_9499.csv']}]
+[2024-07-08 15:56:22,133][root][INFO] - Validation dataset: [{'data': 'EtOH_DB_V3_2_random.csv'}]
+[2024-07-08 15:56:22,133][root][INFO] - Algorithm: NNR
+[2024-07-08 15:56:22,133][root][INFO] - Module: CNN1D
+[2024-07-08 15:56:22,133][root][INFO] - Device: cpu
+[2024-07-08 15:56:22,133][root][INFO] - Execution time of initialization: 0:00:00.003835
+

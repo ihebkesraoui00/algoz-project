@@ -1,0 +1,16 @@
+[2024-07-02 15:56:20,314][root][DEBUG] - /home/iheb/Documents/project/project_algoz_pfe/config/config.yaml copied into dev/20240702155620/io.json.
+[2024-07-02 15:56:20,314][root][DEBUG] - Device assigned: cpu
+[2024-07-02 15:56:20,314][root][INFO] - Algoz version 2.21.1
+[2024-07-02 15:56:20,315][root][INFO] - Execution started at 2024-07-02 15:56:20
+[2024-07-02 15:56:20,315][root][INFO] - Results directory created at: dev/20240702155620
+[2024-07-02 15:56:20,315][root][INFO] - Mode: train
+[2024-07-02 15:56:20,315][root][INFO] - Training dataset: [{'data': 'EtOH_DB_V3_2_9499.csv'}]
+[2024-07-02 15:56:20,315][root][INFO] - Validation dataset: [{'data': 'EtOH_DB_V3_2_random.csv'}]
+[2024-07-02 15:56:20,315][root][INFO] - Algorithm: NNR
+[2024-07-02 15:56:20,316][root][INFO] - Module: {'input_dim': [4, 16], 'conv_map': [8, 64], 'conv_kernel': 3, 'pool_kernel': 2, 'mlp_hidden_dims': [100, 50], 'output_dim': 1, 'use_softmax': False, 'conv_norm': 'batch', 'pp_conv_norm': 'instance', 'mlp_norm': 'batch'}
+[2024-07-02 15:56:20,316][root][INFO] - Device: cpu
+[2024-07-02 15:56:20,316][root][INFO] - Execution time of initialization: 0:00:00.002449
+
+[2024-07-02 15:56:20,316][root][DEBUG] - Creating UnfoldRegressionDataset with {'config_data': {'data_paths': [{'data': 'EtOH_DB_V3_2_random.csv'}], 'chips': ['UUT1'], 'gases': ['FinalConcEtOH'], 'minibatch_size': 16, 'minibatch_step': 1, 'pre_processing': [{'name': 'SkipData', 'percentage': 0}, {'name': 'LimitOfDetection', 'gases': ['FinalConcEtOH'], 'lod': [0.5]}], 'transform': {'x': [{'name': 'Transpose'}]}}, 'device': 'cpu'}
+[2024-07-02 15:56:20,318][root][DEBUG] - 
+[2024-07-02 15:56:20,318][root][DEBUG] - Loading data from {'data': 'EtOH_DB_V3_2_random.csv'}.

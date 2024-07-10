@@ -1,0 +1,15 @@
+artifact_uri: file:///home/iheb/Documents/project/project_algoz_pfe/mlruns/761623164427078203/07c5d95fad1b470f80fe267c81b8492d/artifacts
+end_time: 1720528878220
+entry_point_name: ''
+experiment_id: '761623164427078203'
+lifecycle_stage: active
+run_id: 07c5d95fad1b470f80fe267c81b8492d
+run_name: merciful-mole-821
+run_uuid: 07c5d95fad1b470f80fe267c81b8492d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1720528857920
+status: 3
+tags: []
+user_id: iheb

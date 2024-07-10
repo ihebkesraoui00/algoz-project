@@ -1,0 +1,15 @@
+artifact_uri: file:///home/iheb/Documents/project/project_algoz_pfe/mlruns/761623164427078203/6016674f557c4886b8b66fbc8b70aae5/artifacts
+end_time: 1720535499526
+entry_point_name: ''
+experiment_id: '761623164427078203'
+lifecycle_stage: active
+run_id: 6016674f557c4886b8b66fbc8b70aae5
+run_name: nervous-steed-705
+run_uuid: 6016674f557c4886b8b66fbc8b70aae5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1720535483212
+status: 4
+tags: []
+user_id: iheb

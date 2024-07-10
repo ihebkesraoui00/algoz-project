@@ -1,0 +1,15 @@
+artifact_uri: file:///home/iheb/Documents/project/project_algoz_pfe/mlruns/761623164427078203/d232b740fa7a4d41b359cd47b4d2e255/artifacts
+end_time: 1720525329026
+entry_point_name: ''
+experiment_id: '761623164427078203'
+lifecycle_stage: active
+run_id: d232b740fa7a4d41b359cd47b4d2e255
+run_name: defiant-shark-50
+run_uuid: d232b740fa7a4d41b359cd47b4d2e255
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1720525309527
+status: 3
+tags: []
+user_id: iheb
