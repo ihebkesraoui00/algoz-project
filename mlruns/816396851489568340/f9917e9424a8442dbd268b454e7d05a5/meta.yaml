@@ -1,0 +1,15 @@
+artifact_uri: file:///home/nanoz-admin/Documents/algoz_iheb/algoz-project/mlruns/816396851489568340/f9917e9424a8442dbd268b454e7d05a5/artifacts
+end_time: 1720692902030
+entry_point_name: ''
+experiment_id: '816396851489568340'
+lifecycle_stage: active
+run_id: f9917e9424a8442dbd268b454e7d05a5
+run_name: valuable-jay-550
+run_uuid: f9917e9424a8442dbd268b454e7d05a5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1720692881229
+status: 3
+tags: []
+user_id: nanoz-admin

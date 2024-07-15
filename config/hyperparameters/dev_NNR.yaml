@@ -1,8 +1,8 @@
 module: null
-criterion: "MAELoss"
+criterion: "MSELoss"
 optimizer: "Adam"
 lr: 0.000001
-max_epochs: 2
+max_epochs: 3
 batch_size: 32
 iterator_train: "DataLoader"
 iterator_valid: "DataLoader"

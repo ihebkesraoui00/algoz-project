@@ -1,0 +1,15 @@
+artifact_uri: file:///home/nanoz-admin/Documents/algoz_iheb/algoz-project/mlruns/816396851489568340/e582cf2de16340d3aec8c1958bedf6bf/artifacts
+end_time: 1720706037388
+entry_point_name: ''
+experiment_id: '816396851489568340'
+lifecycle_stage: active
+run_id: e582cf2de16340d3aec8c1958bedf6bf
+run_name: useful-ram-631
+run_uuid: e582cf2de16340d3aec8c1958bedf6bf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1720706006896
+status: 3
+tags: []
+user_id: nanoz-admin

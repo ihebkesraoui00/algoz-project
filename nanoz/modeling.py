@@ -21,6 +21,8 @@ from skorch.callbacks import (Callback, Checkpoint, TrainEndCheckpoint, LoadInit
                               TensorBoard)
 
 from nanoz.modules.NN import MLP, CNN1D, CNN2D, RNN, CRNN1D, CRNN2D
+from nanoz.modules.AE import (AutoEncoderNet, AutoEncoderRegressorNet, AutoEncoderClassifierNet,
+                              AutoEncoder, AutoEncoderRegressor, AutoEncoderClassifier)
 
 from nanoz.modules.losses import available_loss
 from nanoz.nzio import get_last_model_path
@@ -44,10 +46,10 @@ extract_module = [
 # Dictionnaire extrait
 # TODO: merge with available_algorithm method from Algorithm
 class AvailableAlgorithm:
-    regression = [ "NNR"]
-                  #,"ETR", "HGBR", "SGDR", "SVR", "AERN"]
-    #classification = ["NNC", "AECN"]
-    #autoencoder = ["AEN"]
+    regression = [ "NNR"
+                  ,"ETR", "HGBR", "SGDR", "SVR", "AERN"]
+    classification = ["NNC", "AECN"]
+    autoencoder = ["AEN"]
 
     @classmethod
     def get_type(cls, algorithm):
@@ -66,13 +68,13 @@ class AvailableAlgorithm:
         """
         if algorithm in cls.regression:
             return "regression"
-        '''elif algorithm in cls.classification:
+        elif algorithm in cls.classification:
             return "classification"
         elif algorithm in cls.autoencoder:
             return "autoencoder"
         else:
             raise ValueError(f"Invalid algorithm: {algorithm}")
-'''
+
 
 class AlgorithmFactory:
     @staticmethod
@@ -80,7 +82,7 @@ class AlgorithmFactory:
         if mode == "train":
             logging.debug(f"Creating TrainAlgorithm with {kwargs}")
             return TrainAlgorithm(**kwargs)
-    '''    elif mode == "inference":
+        elif mode == "inference":
             logging.debug(f"Creating InferenceAlgorithm with {kwargs}")
             return InferenceAlgorithm(**kwargs)
         elif mode == "predict":
@@ -92,7 +94,7 @@ class AlgorithmFactory:
         elif mode == "hyperparameter":
             return HyperparameterAlgorithm(**kwargs)
         else:
-            raise ValueError(f"Invalid mode: {mode}")'''
+            raise ValueError(f"Invalid mode: {mode}")
 
 
 class Algorithm:
@@ -130,10 +132,10 @@ class Algorithm:
             "SGDR": SGDRegressor,
             "SVR": SVR,
             "NNR": NeuralNetRegressor,
-            "NNC": NeuralNetClassifier
-          #  "AEN": AutoEncoderNet,
-            #"AERN": AutoEncoderRegressorNet,
-           # "AECN": AutoEncoderClassifierNet
+            "NNC": NeuralNetClassifier,
+            "AEN": AutoEncoderNet,
+            "AERN": AutoEncoderRegressorNet,
+            "AECN": AutoEncoderClassifierNet
         }
         logging.debug(f'Available algorithms: {list(available_algorithms)}.')
         return available_algorithms
@@ -158,10 +160,10 @@ class Algorithm:
             "CNN2D": CNN2D,
             "RNN": RNN,
             "CRNN1D": CRNN1D,
-            "CRNN2D": CRNN2D
-           # "AE": AutoEncoder,
-            #"AER": AutoEncoderRegressor,
-            #"AEC": AutoEncoderClassifier
+            "CRNN2D": CRNN2D,
+            "AE": AutoEncoder,
+            "AER": AutoEncoderRegressor,
+            "AEC": AutoEncoderClassifier
         }
         logging.debug(f'Available module: {list(available_modules)}.')
         return available_modules
@@ -386,7 +388,7 @@ class TrainAlgorithm(Algorithm):
             return self.model
 
 
-'''class InferenceAlgorithm(Algorithm):
+class InferenceAlgorithm(Algorithm):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.mode = "inference"
@@ -412,7 +414,7 @@ class ResumeAlgorithm(Algorithm):
         super().__init__(**kwargs)
         self.mode = "train"
         # TODO
-'''
+
 
 class HyperparameterAlgorithm(Algorithm):
     def __init__(self, **kwargs):

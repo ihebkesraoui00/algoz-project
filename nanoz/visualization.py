@@ -584,9 +584,14 @@ class Dashboard:
         self.font_size = 18
         self.plot_height = 800
 
+
     def save_dashboards(self, save_path, name):
+        saved_dashboards = []  # Initialize an empty list to store names of saved dashboards
         for dashboard_name, dashboard in self.figs.items():
-            dashboard.write_html(Path(save_path, name + "_" + dashboard_name).with_suffix(".html"))
+            file_name = f"{name}_{dashboard_name}.html"
+            dashboard.write_html(Path(save_path, file_name))
+            saved_dashboards.append(file_name)  # Add the file name to the list
+        return saved_dashboards
 
 
 class RegressionDashboard(Dashboard):

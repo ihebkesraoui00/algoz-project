@@ -1,2 +1,0 @@
-epoch,train_batch_count,valid_batch_count,dur,train_loss,train_loss_best,valid_loss,valid_loss_best,event_cp
-1,593,593,4.63482666015625,522.1777388288995,True,522.526140585713,True,True

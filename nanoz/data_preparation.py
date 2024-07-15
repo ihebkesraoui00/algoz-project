@@ -139,11 +139,11 @@ class DatasetFactory:
         """
         algo_type = AvailableAlgorithm.get_type(algo)
         if algo_type == "regression":
-            logging.debug(f"Creating UnfoldRegressionDataset with {kwargs}")
+            logging.debug(f"Creating Untrain_classficationfoldRegressionDataset with {kwargs}")
             return UnfoldRegressionDataset(mode,**kwargs)
         elif algo_type == "classification":
             logging.debug(f"Creating UnfoldClassificationDataset with {kwargs}")
-            return UnfoldClassificationDataset(**kwargs)
+            return UnfoldClassificationDataset(mode,**kwargs)
         elif algo_type == "autoencoder":
             logging.debug(f"Creating UnfoldAutoEncoderDataset with {kwargs}")
             return UnfoldAutoEncoderDataset(**kwargs)
@@ -369,16 +369,20 @@ class UnfoldRegressionDataset(UnfoldDataset):
         logging.debug(f"Size of labels: {y.shape}.")
         return x.to(self.device), y.to(self.device)
 
-'''
+
 class UnfoldClassificationDataset(UnfoldDataset):
-    def __init__(self, config_data, device):
-        super().__init__(config_data, device)
+    def __init__(self, mode,config_data, device):
+        super().__init__(mode,config_data, device)
         self._x, self._y = self.prepare_torch_tensor()
         self.classes = self._get_classes()
 
     def __getitem__(self, idx):
         idx_end = self.minibatch_idx[idx]
-        idx_start = idx_end - self.config_data["minibatch_size"]
+        if (self.mode=="train"):
+            idx_start = idx_end - self.config_data["minibatch_size_train"]
+        else:
+            idx_start = idx_end - self.config_data["minibatch_size_test"]
+    
         sample = {"x": self._x[idx_start:idx_end, :], "y": self._y[idx_end]}
         if self.transform:
             for var in self.transform:
@@ -409,8 +413,11 @@ class UnfoldAutoEncoderDataset(UnfoldDataset):
 
     def __getitem__(self, idx):
         idx_end = self.minibatch_idx[idx]
-        idx_start = idx_end - self.config_data["minibatch_size"]
-        sample = {"x": self._x[idx_start:idx_end, :]}
+        if (self.mode=="train"):
+            idx_start = idx_end - self.config_data["minibatch_size_train"]
+        else:
+            idx_start = idx_end - self.config_data["minibatch_size_test"]
+            sample = {"x": self._x[idx_start:idx_end, :]}
         if self.transform:
             for var in self.transform:
                 sample[var] = transforms.Compose(self.transform[var])(sample[var])
@@ -422,4 +429,3 @@ class UnfoldAutoEncoderDataset(UnfoldDataset):
         logging.debug(f"Size of features: {x.shape}.")
         logging.debug(f"Size of labels: {x.shape}.")
         return x.to(self.device), x.to(self.device)
-'''

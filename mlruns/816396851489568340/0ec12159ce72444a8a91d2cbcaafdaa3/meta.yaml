@@ -1,0 +1,15 @@
+artifact_uri: file:///home/nanoz-admin/Documents/algoz_iheb/algoz-project/mlruns/816396851489568340/0ec12159ce72444a8a91d2cbcaafdaa3/artifacts
+end_time: 1720704067894
+entry_point_name: ''
+experiment_id: '816396851489568340'
+lifecycle_stage: active
+run_id: 0ec12159ce72444a8a91d2cbcaafdaa3
+run_name: illustrious-bear-62
+run_uuid: 0ec12159ce72444a8a91d2cbcaafdaa3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1720704045102
+status: 3
+tags: []
+user_id: nanoz-admin

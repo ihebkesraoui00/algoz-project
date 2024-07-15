@@ -1,0 +1,15 @@
+artifact_uri: file:///home/nanoz-admin/Documents/algoz_iheb/algoz-project/mlruns/816396851489568340/3e13e41ab3e942fc99b1501cd7e22f3d/artifacts
+end_time: 1720704588772
+entry_point_name: ''
+experiment_id: '816396851489568340'
+lifecycle_stage: active
+run_id: 3e13e41ab3e942fc99b1501cd7e22f3d
+run_name: delightful-dove-270
+run_uuid: 3e13e41ab3e942fc99b1501cd7e22f3d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1720704588741
+status: 4
+tags: []
+user_id: nanoz-admin

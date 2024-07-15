@@ -151,8 +151,8 @@ def save_results(configs, algorithm, datasets, save_paths):
 
         # Save results as a dashboard
         dashboard = DashboardFactory.create_dashboard(configs.algo, name=name, evaluator=evaluator)
-        dashboard.save_dashboards(save_paths["results"], name)
-    return evaluator,dashboard
+        saved_dashboard_names =dashboard.save_dashboards(save_paths["results"], name)
+    return evaluator,dashboard, saved_dashboard_names
 
 
 @timing
@@ -168,12 +168,12 @@ def main(config: DictConfig):
             algorithm = get_algorithm(configs, datasets, save_paths)
             mlflow.set_tag('algorithm', algorithm.model.module.__class__.__name__)
             mlflow.log_params({'criterion': algorithm.config.parameters["criterion"],'optimizer': algorithm.config.parameters["optimizer"],'lr': algorithm.config.parameters["lr"], 'max_epochs': algorithm.config.parameters["max_epochs"], 'batch_size': algorithm.config.parameters["batch_size"]})
-            print (algorithm.config.parameters)
             mlflow.sklearn.log_model(algorithm.model.module, f'{algorithm.model.module.__class__.__name__}')
-            evaluator,dashboard = save_results(configs, algorithm, datasets, save_paths)
+            evaluator,dashboard, saved_dashboard_names = save_results(configs, algorithm, datasets, save_paths)
             mlflow.log_figure(figure=dashboard.figs["global"] , artifact_file=f'{algorithm.model.module.__class__.__name__}.png')
-
-                    # Calculate and log each metric
+            for file_name in saved_dashboard_names:
+                file_path = Path(save_paths["results"], file_name)
+                mlflow.log_artifact(str(file_path))                    # Calculate and log each metric"
             for metric_name, metric_function in evaluator.metrics.items():
                 result = metric_function(evaluator.ground_truth,evaluator.prediction)
                 mlflow.log_metric(metric_name, result)

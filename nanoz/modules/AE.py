@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-'''
+
 from torch import nn
 from skorch import NeuralNetRegressor, NeuralNetClassifier
 
@@ -165,4 +165,3 @@ def get_rnn_encoder(**parameters):
                pp_rnn_norm=parameters.get("pp_rnn_norm", None),
                mlp_norm=parameters.get("mlp_norm", None),
                pp_mlp_norm=None)
-'''

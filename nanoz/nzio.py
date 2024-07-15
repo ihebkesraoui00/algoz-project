@@ -376,7 +376,7 @@ class TrainConfig(Config):
         else:
             logging.info(f"Device: {self.device}")
 
-'''
+
 class InferenceConfig(Config):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
@@ -496,4 +496,3 @@ class ScriptConfig(Config):
         logging.info(f"Algorithm: {self.algo}")
         if self.module:
             logging.info(f"Module: {self.module}")
-'''
