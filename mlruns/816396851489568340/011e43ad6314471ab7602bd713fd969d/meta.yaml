@@ -1,0 +1,15 @@
+artifact_uri: file:///home/nanoz-admin/Documents/algoz_iheb/algoz-project/mlruns/816396851489568340/011e43ad6314471ab7602bd713fd969d/artifacts
+end_time: 1721217652188
+entry_point_name: ''
+experiment_id: '816396851489568340'
+lifecycle_stage: active
+run_id: 011e43ad6314471ab7602bd713fd969d
+run_name: smiling-boar-308
+run_uuid: 011e43ad6314471ab7602bd713fd969d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721217636852
+status: 3
+tags: []
+user_id: nanoz-admin

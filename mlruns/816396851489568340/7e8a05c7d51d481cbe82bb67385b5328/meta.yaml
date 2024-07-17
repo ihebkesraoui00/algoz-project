@@ -1,0 +1,15 @@
+artifact_uri: file:///home/nanoz-admin/Documents/algoz_iheb/algoz-project/mlruns/816396851489568340/7e8a05c7d51d481cbe82bb67385b5328/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '816396851489568340'
+lifecycle_stage: active
+run_id: 7e8a05c7d51d481cbe82bb67385b5328
+run_name: charming-snipe-324
+run_uuid: 7e8a05c7d51d481cbe82bb67385b5328
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721051590509
+status: 1
+tags: []
+user_id: nanoz-admin

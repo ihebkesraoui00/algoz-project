@@ -1,5 +1,5 @@
 data_paths_train:
-  - data: ["EtOH_DB_V3_2_9499.csv"] 
+  - data: ["EtOH_DB_V3_2_random.csv"] 
 chips_train: ["UUT1", "UUT2"]
 gases_train: ["FinalConcEtOH"]
 minibatch_size_train: 16

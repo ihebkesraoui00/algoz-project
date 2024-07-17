@@ -1,0 +1,14 @@
+[07/15/2024 03:32:16 PM] [DEBUG] [/home/nanoz-admin/Documents/algoz_iheb/algoz-project/nanoz/nzio.py:254] /home/nanoz-admin/Documents/algoz_iheb/algoz-project/config/config.yaml copied into dev/20240715153216/io.json.
+[07/15/2024 03:32:16 PM] [DEBUG] [/home/nanoz-admin/Documents/algoz_iheb/algoz-project/nanoz/nzio.py:270] Device assigned: cpu
+[07/15/2024 03:32:16 PM] [INFO] [/home/nanoz-admin/Documents/algoz_iheb/algoz-project/algoz.py:50] Algoz version 2.21.1
+[07/15/2024 03:32:16 PM] [INFO] [/home/nanoz-admin/Documents/algoz_iheb/algoz-project/algoz.py:51] Execution started at 2024-07-15 15:32:16
+[07/15/2024 03:32:16 PM] [INFO] [/home/nanoz-admin/Documents/algoz_iheb/algoz-project/algoz.py:52] Results directory created at: dev/20240715153216
+[07/15/2024 03:32:16 PM] [INFO] [/home/nanoz-admin/Documents/algoz_iheb/algoz-project/nanoz/nzio.py:366] Mode: train
+[07/15/2024 03:32:16 PM] [INFO] [/home/nanoz-admin/Documents/algoz_iheb/algoz-project/nanoz/nzio.py:367] Training dataset: [{'data': ['EtOH_DB_V3_2_9499.csv']}]
+[07/15/2024 03:32:16 PM] [INFO] [/home/nanoz-admin/Documents/algoz_iheb/algoz-project/nanoz/nzio.py:368] Validation dataset: [{'data': 'EtOH_DB_V3_2_random.csv'}]
+[07/15/2024 03:32:16 PM] [INFO] [/home/nanoz-admin/Documents/algoz_iheb/algoz-project/nanoz/nzio.py:369] Algorithm: NNR
+[07/15/2024 03:32:16 PM] [INFO] [/home/nanoz-admin/Documents/algoz_iheb/algoz-project/nanoz/nzio.py:371] Module: CNN1D
+[07/15/2024 03:32:16 PM] [INFO] [/home/nanoz-admin/Documents/algoz_iheb/algoz-project/nanoz/nzio.py:377] Device: cpu
+[07/15/2024 03:32:16 PM] [INFO] [/home/nanoz-admin/Documents/algoz_iheb/algoz-project/nanoz/utils.py:60] Execution time of initialization: 0:00:00.012598
+
+[07/15/2024 03:32:16 PM] [DEBUG] [/home/nanoz-admin/miniconda3/envs/algoz/lib/python3.9/site-packages/matplotlib/pyplot.py:487] Loaded backend qtagg version 5.15.4.

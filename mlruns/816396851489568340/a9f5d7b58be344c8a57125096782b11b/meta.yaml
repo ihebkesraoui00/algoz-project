@@ -1,0 +1,15 @@
+artifact_uri: file:///home/nanoz-admin/Documents/algoz_iheb/algoz-project/mlruns/816396851489568340/a9f5d7b58be344c8a57125096782b11b/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '816396851489568340'
+lifecycle_stage: active
+run_id: a9f5d7b58be344c8a57125096782b11b
+run_name: stately-hen-924
+run_uuid: a9f5d7b58be344c8a57125096782b11b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721052112911
+status: 1
+tags: []
+user_id: nanoz-admin

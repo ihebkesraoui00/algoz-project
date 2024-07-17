@@ -206,7 +206,6 @@ class UnfoldDataset(Dataset):
             step_list = []
             for step in self.config_data[name]:
                 step_list.append(getattr(nzpp, step["name"])(**step))
-                print(step)
 
             return step_list
         else:
@@ -231,9 +230,9 @@ class UnfoldDataset(Dataset):
     def _get_available_idx(self):
         batch_idx = []
         ptr_counter = 0
-
         if self.mode == "train":
             for _ in self.config_data["chips_train"]:
+                
                 for file_size in self.file_size:
                     batch_idx.extend(list(range(ptr_counter + self.config_data["minibatch_size_train"],
                                                 ptr_counter + file_size,

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/nanoz-admin/Documents/algoz_iheb/algoz-project/mlruns/816396851489568340/aaa7e2d240874f6ab8172c2b5e7ea07b/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '816396851489568340'
+lifecycle_stage: active
+run_id: aaa7e2d240874f6ab8172c2b5e7ea07b
+run_name: tasteful-ant-462
+run_uuid: aaa7e2d240874f6ab8172c2b5e7ea07b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721054863785
+status: 1
+tags: []
+user_id: nanoz-admin

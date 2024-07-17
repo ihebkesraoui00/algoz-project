@@ -1,0 +1,15 @@
+artifact_uri: file:///home/nanoz-admin/Documents/algoz_iheb/algoz-project/mlruns/816396851489568340/94ccf008bcdd4e4bbd4bf0ca825216fa/artifacts
+end_time: 1721220346955
+entry_point_name: ''
+experiment_id: '816396851489568340'
+lifecycle_stage: active
+run_id: 94ccf008bcdd4e4bbd4bf0ca825216fa
+run_name: illustrious-wasp-621
+run_uuid: 94ccf008bcdd4e4bbd4bf0ca825216fa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721220331162
+status: 3
+tags: []
+user_id: nanoz-admin

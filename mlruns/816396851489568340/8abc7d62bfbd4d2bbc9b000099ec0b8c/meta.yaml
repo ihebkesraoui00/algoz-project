@@ -1,0 +1,15 @@
+artifact_uri: file:///home/nanoz-admin/Documents/algoz_iheb/algoz-project/mlruns/816396851489568340/8abc7d62bfbd4d2bbc9b000099ec0b8c/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '816396851489568340'
+lifecycle_stage: active
+run_id: 8abc7d62bfbd4d2bbc9b000099ec0b8c
+run_name: honorable-crane-348
+run_uuid: 8abc7d62bfbd4d2bbc9b000099ec0b8c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721143139202
+status: 1
+tags: []
+user_id: nanoz-admin

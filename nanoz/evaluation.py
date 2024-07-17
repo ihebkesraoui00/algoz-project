@@ -8,6 +8,7 @@ from scipy import stats
 from sklearn import metrics
 from sklearn.preprocessing import OneHotEncoder
 import mlflow
+import matplotlib.pyplot as plt
 
 from nanoz.modeling import AvailableAlgorithm
 
@@ -19,11 +20,11 @@ class EvaluatorFactory:
         if algo_type == "regression":
             logging.debug(f"Creating RegressionEvaluator with {kwargs}")
             return RegressionEvaluator(**kwargs)
-        '''elif algo_type == "classification":
+        elif algo_type == "classification":
             logging.debug(f"Creating ClassificationEvaluator with {kwargs}")
             return ClassificationEvaluator(**kwargs)
         else:
-            raise ValueError(f"Invalid algorithm: {algo}") '''
+            raise ValueError(f"Invalid algorithm: {algo}") 
 
 
 class Evaluator:
@@ -69,7 +70,6 @@ class RegressionEvaluator(Evaluator):
         super().__init__(**kwargs)
         self.metrics = RegressionMetrics("full").metrics
         self.metrics_per_intervals = RegressionMetrics("interval").metrics
-
         for index, target in enumerate(self.targets_name):
             if self.intervals:
                 self.intervals_performances[target] = self.compute_intervals_performances(self.ground_truth[:, index],
@@ -85,10 +85,31 @@ class RegressionEvaluator(Evaluator):
             self.performances[target] = self.compute_performances(ground_truth, prediction,
                                                                   self.metrics, index_name=target)
             self.target_performances = pd.concat([self.target_performances, self.performances[target]], axis=0)
+            # Create and log the plot
+            self.create_and_log_plot(ground_truth, prediction, target)
 
+    def log_metrics_to_mlflow(self, ground_truth, prediction):
+        mape_value = mape(ground_truth, prediction)
+        mlflow.log_metric("MAPE", mape_value)
+
+    def create_and_log_plot(self, ground_truth, prediction, target_name):
+        mape_values = np.abs((ground_truth - prediction) / ground_truth) * 100
+        plt.figure()
+        plt.scatter(ground_truth, mape_values, color='blue', label='MAPE')
+        plt.xlabel('Target Gas Concentration')
+        plt.ylabel('MAPE (%)')
+        plt.title(f'MAPE vs Target Gas Concentration for {target_name}')
+        plt.legend()
+        plt.grid(True)
+
+        plot_path = f"mape_vs_target_gas_concentration_{target_name}.png"
+        plt.savefig(plot_path)
+        mlflow.log_artifact(plot_path)
+        plt.close()
     def compute_intervals_performances(self, ground_truth, prediction):  # Ordinal intervals
         df = pd.DataFrame(columns=list(self.metrics_per_intervals))
         for interval in self.intervals:
+
             idx = np.where((ground_truth > interval[0]) & (ground_truth <= interval[1]))[0]
             df_interval = self.compute_performances(ground_truth[idx], prediction[idx],
                                                     self.metrics_per_intervals, index_name=str(interval))
@@ -249,8 +270,8 @@ class RegressionMetrics:
     def log_metrics(self, y_true, y_pred):
             for metric_name, metric_func in self.metrics.items():
                 value = metric_func(y_true, y_pred)
-                print(f"{metric_name}: {value}")
                 mlflow.log_metric(metric_name, value)
+                mlflow.log_artifact()
 
 class ClassificationMetrics:
     def __init__(self, *args):

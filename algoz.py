@@ -113,7 +113,6 @@ def save_results(configs, algorithm, datasets, save_paths):
         if algo_type == "regression":
             try:  # regression with performance intervals
                 intervals = configs.io["performance_intervals"]
-                print (intervals)
             except KeyError:
                 pass
         elif algo_type == "classification":
@@ -152,7 +151,7 @@ def save_results(configs, algorithm, datasets, save_paths):
         # Save results as a dashboard
         dashboard = DashboardFactory.create_dashboard(configs.algo, name=name, evaluator=evaluator)
         saved_dashboard_names =dashboard.save_dashboards(save_paths["results"], name)
-    return evaluator,dashboard, saved_dashboard_names
+    return evaluator, saved_dashboard_names
 
 
 @timing
@@ -169,8 +168,7 @@ def main(config: DictConfig):
             mlflow.set_tag('algorithm', algorithm.model.module.__class__.__name__)
             mlflow.log_params({'criterion': algorithm.config.parameters["criterion"],'optimizer': algorithm.config.parameters["optimizer"],'lr': algorithm.config.parameters["lr"], 'max_epochs': algorithm.config.parameters["max_epochs"], 'batch_size': algorithm.config.parameters["batch_size"]})
             mlflow.sklearn.log_model(algorithm.model.module, f'{algorithm.model.module.__class__.__name__}')
-            evaluator,dashboard, saved_dashboard_names = save_results(configs, algorithm, datasets, save_paths)
-            mlflow.log_figure(figure=dashboard.figs["global"] , artifact_file=f'{algorithm.model.module.__class__.__name__}.png')
+            evaluator, saved_dashboard_names = save_results(configs, algorithm, datasets, save_paths)
             for file_name in saved_dashboard_names:
                 file_path = Path(save_paths["results"], file_name)
                 mlflow.log_artifact(str(file_path))                    # Calculate and log each metric"

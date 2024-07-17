@@ -1,0 +1,15 @@
+artifact_uri: file:///home/nanoz-admin/Documents/algoz_iheb/algoz-project/mlruns/816396851489568340/a1b7eb99388b4da0a2ad6b3822e98497/artifacts
+end_time: 1721045447479
+entry_point_name: ''
+experiment_id: '816396851489568340'
+lifecycle_stage: active
+run_id: a1b7eb99388b4da0a2ad6b3822e98497
+run_name: ambitious-gull-723
+run_uuid: a1b7eb99388b4da0a2ad6b3822e98497
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721045304103
+status: 3
+tags: []
+user_id: nanoz-admin

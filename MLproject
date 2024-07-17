@@ -1,0 +1,8 @@
+name: ALGOZ
+conda_env: conda.yaml
+
+entry_points:
+
+  main:
+
+    command: "python algoz.py"

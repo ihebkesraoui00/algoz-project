@@ -1,0 +1,15 @@
+artifact_uri: file:///home/nanoz-admin/Documents/algoz_iheb/algoz-project/mlruns/816396851489568340/18eabc05f4154ed6b94e55ace0dfec5b/artifacts
+end_time: 1721050264887
+entry_point_name: ''
+experiment_id: '816396851489568340'
+lifecycle_stage: active
+run_id: 18eabc05f4154ed6b94e55ace0dfec5b
+run_name: glamorous-crane-466
+run_uuid: 18eabc05f4154ed6b94e55ace0dfec5b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721050230227
+status: 4
+tags: []
+user_id: nanoz-admin

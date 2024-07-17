@@ -1,0 +1,16 @@
+artifact_uri: file:///home/nanoz-admin/Documents/algoz_iheb/algoz-project/mlruns/942511514412431990/ca705cb6dbf040a8a1acc634f85e26f0/artifacts
+deleted_time: 1721142066302
+end_time: 1721044962629
+entry_point_name: ''
+experiment_id: '942511514412431990'
+lifecycle_stage: deleted
+run_id: ca705cb6dbf040a8a1acc634f85e26f0
+run_name: youthful-rat-626
+run_uuid: ca705cb6dbf040a8a1acc634f85e26f0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721044713804
+status: 4
+tags: []
+user_id: nanoz-admin
