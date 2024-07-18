@@ -26,3 +26,4 @@ dependencies:
     - tensorboard==2.12.1
     - torchvision==0.18.1
     - kaleido
+    - dagshub

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/nanoz-admin/Documents/algoz_iheb/algoz-project/mlruns/816396851489568340/81cc109e1de1416bac8a190d18013c6c/artifacts
+end_time: 1721221762471
+entry_point_name: ''
+experiment_id: '816396851489568340'
+lifecycle_stage: active
+run_id: 81cc109e1de1416bac8a190d18013c6c
+run_name: brawny-fish-498
+run_uuid: 81cc109e1de1416bac8a190d18013c6c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721221746616
+status: 3
+tags: []
+user_id: nanoz-admin

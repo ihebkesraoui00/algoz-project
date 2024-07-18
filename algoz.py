@@ -9,6 +9,7 @@ from torch import no_grad
 import hydra
 from omegaconf import DictConfig
 import mlflow 
+import dagshub
 
 from nanoz.config import ALGOZ_PATH
 from nanoz.utils import timing, version
@@ -159,9 +160,11 @@ def save_results(configs, algorithm, datasets, save_paths):
 def main(config: DictConfig):
     new_directory = ALGOZ_PATH  
     os.chdir(new_directory)
-    
+    mlflow.set_tracking_uri("https://dagshub.com/IhebKesraoui/algoz-project.mlflow")
     configs, save_paths = initialization(config)
     datasets = get_datasets(configs, save_paths)
+    dagshub.init(repo_owner='IhebKesraoui', repo_name='algoz-project', mlflow=True)
+
     mlflow.set_experiment(f'ALGOZ')
     with mlflow.start_run() as run:
             algorithm = get_algorithm(configs, datasets, save_paths)
