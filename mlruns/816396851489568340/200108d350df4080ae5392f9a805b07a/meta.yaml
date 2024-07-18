@@ -1,0 +1,15 @@
+artifact_uri: file:///home/nanoz-admin/Documents/algoz_iheb/algoz-project/mlruns/816396851489568340/200108d350df4080ae5392f9a805b07a/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '816396851489568340'
+lifecycle_stage: active
+run_id: 200108d350df4080ae5392f9a805b07a
+run_name: intelligent-kit-688
+run_uuid: 200108d350df4080ae5392f9a805b07a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721289810832
+status: 1
+tags: []
+user_id: iheb
